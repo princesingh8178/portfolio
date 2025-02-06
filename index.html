@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; 
+            color: #333333; 
+        }
+        header {
+            background: #ffffff; 
+            color: #333333; 
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #00796b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #004d40; 
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            background-color: #ffffff; 
+            color: #00796b; 
+        }
+
+        .image-container {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            color: #00796b; 
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #333333; 
+        }
+
+        section {
+            padding: 50px;
+            border-bottom: 1px solid #ddd; 
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #00796b; 
+            font-weight: bold;
+        }
+
+        h3 {
+            color: #00796b; 
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-weight: bold;
+            color: #00796b; 
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background-color: #ffffff; 
+            padding: 15px;
+            border-radius: 8px;
+            color: #333333; 
+            font-size: 1.1em;
+            width: 150px;
+            text-align: center;
+            border: 1px solid #ddd; 
+        }
+
+        footer {
+            background-color: #ffffff; 
+            color: #333333;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+        }
+
+        .social-media a {
+            color: #00796b; 
+            text-decoration: none;
+        }
+
+        .cta-button {
+            background-color: #00796b; 
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        .cta-button:hover {
+            background-color: #004d40; 
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <div class="hero" style="background-color: #F1E0C6; color: #5F4B3C;">
+                <h1 style="color: #D17D5B;">Prince Singh</h1>
+                <p style="color: #8C6B5E;"><span>Aspiring Computer Application Professional</span></p>
+                <div class="image-container">
+                    <img src="images/prince.jpeg" alt="Prince Singh" />
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a detail-oriented and highly motivated fresher in data analytics and engineering, passionate about extracting insights from data and enabling data-driven decision-making. Proficient in Python, SQL, and Power BI, I have experience working with large datasets, performing data analysis, and creating impactful visualizations. With a strong analytical mindset and problem-solving skills, I thrive in collaborative environments and can effectively communicate insights to both technical and non-technical teams. Eager to apply my knowledge and grow in a dynamic, innovation-driven organization, I am committed to leveraging data to drive meaningful business solutions.</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>Spotify Prediction Model (07/2024 - 08/2024)</h3>
+                    <p>The Spotify prediction model uses pandas for data loading and manipulation. Feature selection extracts relevant attributes like danceability, energy, and loudness as input features ( X ), while the target variable ( y ) could represent a song's mood or a binary classification (e.g., danceability). Machine learning models are then applied for prediction and analysis.</p>
+                    <p>Technology - Logistic Regression, Linear Regression, Seaborn, and Matplotlib.</p>
+                </div>
+                <div class="project">
+                    <h3>Language Translation Model (04/2024 - 05/2024)</h3>
+                    <p>A language translation model converts text from a source to a target language while preserving meaning, context, and cultural nuances. It enables accurate translation for applications like customer support, document translation, and multilingual content generation, ensuring natural and clear communication.</p>
+                    <p>Technology - Natural Language Processing, TensorFlow.</p>
+                </div>
+                <div class="project">
+                    <h3>Speech To Text (05/2024 - 05/2024)</h3>
+                    <p>This project implements a Speech-to-Text Application using Python. It is designed to convert spoken words into text and save the recognized text into a file for future use. The application uses the SpeechRecognition library for speech processing and the Google Web Speech API for transcription.</p>
+                    <p>Technology – Speech Recognition and Google Web Speech API.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Master of Computer Application, K.R. Managalam University (08/2023 - 05/2025)</li>
+                <li>Bachelor of Computer Application, Pt.Jawaharlal Nehru College (07/2019 - 06/2022)</li>
+                <li>12th, Rawal Convent School (03/2018 - 03/2019)</li>
+                <li>10th, Rawal Convent School (03/2016 - 03/2017)</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>Machine Learning Intern</strong>, K.R Mangalam University <br>
+                    <em>(July 2024 - August 2024)</em> <br><br>
+                    Gained practical experience in developing, implementing, and optimizing machine learning models for real-world applications. <br>
+                    Worked on analyzing data, building predictive models, and deriving actionable insights using advanced tools and frameworks. <br>
+                    Focused on enhancing technical skills and solving complex problems through hands-on project work.
+                </li>
+                <br>
+                <li>
+                    <strong>Front-end Web Developer</strong>, Greatertechhub <br>
+                    <em>(December 2024 - Present)</em> <br><br>
+                    Developed and maintained responsive web interfaces using **HTML, CSS**, ensuring a seamless user experience. <br>
+                    Collaborated with designers and backend developers to implement user-friendly features and integrate APIs efficiently. <br>
+                    Focused on performance optimization, accessibility, and cross-browser compatibility to enhance web application usability.
+                </li>
+            </ul>
+        </section>
+        
+        <section id="skills">
+            <h2 style="color: #D17D5B;">Skills</h2>
+            <div class="skills-grid" style="background-color: #F1E0C6; padding: 20px; border-radius: 10px;">
+                <div class="skill" style="background-color: #FF7F50; color: #ffffff;">Python</div>
+                <div class="skill" style="background-color: #4CAF50; color: #ffffff;">HTML & CSS</div>
+                <div class="skill" style="background-color: #FF9800; color: #ffffff;">Artificial Intelligence and Machine Learning</div>
+                <div class="skill" style="background-color: #2196F3; color: #ffffff;">Power BI</div>
+                <div class="skill" style="background-color: #9C27B0; color: #ffffff;">Data Analysis</div>
+            </div>
+        </section>
+        
+        
+        
+        
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                
+                <p>
+                    <a href="https://wa.me/+918178723319" target="_blank">
+                        <i class="fab fa-whatsapp fa-2x"></i> +91 8178723319
+                    </a>
+                </p>
+                
+                <p>
+                    <a href="mailto:princesingh14112001@gmail.com?subject=Inquiry&body=Hello Prince, I would like to connect with you.">
+                        <i class="fas fa-envelope fa-2x"></i> princesingh14112001@gmail.com
+                    </a>
+                </p>
+            </div>
+            <div class="social-media">
+                
+                <p>
+                    <a href="https://www.linkedin.com/in/prince-singh-a65a91312/" target="_blank">
+                        <i class="fab fa-linkedin fa-2x"></i> LinkedIn
+                    </a>
+                </p>
+                
+                <p>
+                    <a href="https://github.com/princesingh8178" target="_blank">
+                        <i class="fab fa-github fa-2x"></i> GitHub
+                    </a>
+                </p>
+                
+                <p>
+                    <a href="https://www.instagram.com/princesingh141_/" target="_blank">
+                        <i class="fab fa-instagram fa-2x"></i> Instagram
+                    </a>
+                </p>
+        
+            </div>
+            <br>
+            <a href="Prince/Prince .pdf" download class="cta-button">
+                <i class="fas fa-download fa-2x"></i> Download Resume
+            </a>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Prince Singh. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
